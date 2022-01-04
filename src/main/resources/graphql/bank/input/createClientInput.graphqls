@@ -1,0 +1,6 @@
+input CreateClientInput{
+    id: Int!,
+    firstName: String!
+    middleName: [String!]
+    lastName: String!
+}

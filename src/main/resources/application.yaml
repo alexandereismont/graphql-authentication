@@ -1,0 +1,15 @@
+graphql:
+  servlet:
+    max-query-depth: 1
+    exception-handlers-enabled: true
+  playground:
+    headers:
+      Authorization: Bearer TOKEN
+    tabs:
+      - name: Bank account query
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
+
+spring:
+  codec:
+    max-in-memory-size: 30MB

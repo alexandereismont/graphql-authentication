@@ -1,0 +1,5 @@
+input CreateBankAccountInput {
+    id: ID,
+    clientId: Int,
+    currency: Currency
+}

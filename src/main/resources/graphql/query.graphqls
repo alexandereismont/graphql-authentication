@@ -1,0 +1,9 @@
+#
+type Query {
+    client(clientId: Int) : Client
+    currencies: [Currency!]!
+}
+
+extend type Client {
+    bankAccount : BankAccount
+}

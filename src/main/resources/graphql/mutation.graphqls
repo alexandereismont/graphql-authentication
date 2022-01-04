@@ -1,0 +1,7 @@
+scalar Upload
+
+type Mutation {
+    createBankAccount(input: CreateBankAccountInput!) : Boolean!
+    createClient(input: CreateClientInput!) : Boolean
+    uploadFile(file: Upload): Boolean
+}

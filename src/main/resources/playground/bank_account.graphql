@@ -1,0 +1,12 @@
+# Write your query or mutation here
+query GET_BANK_ACCOUNT($id: ID){
+    bankAccount(id: $id) {
+        id
+        client{
+            firstName
+            client {
+                firstName
+            }
+        }
+    }
+}
